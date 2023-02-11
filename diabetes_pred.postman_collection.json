@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "68ce0072-b707-4050-bd00-e219aed2a9cc",
+		"name": "diabetes_pred",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2917657"
+	},
+	"item": [
+		{
+			"name": "http://192.168.1.7:5003/diabetes/predict",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Glucose",
+							"value": "148",
+							"type": "text"
+						},
+						{
+							"key": "BloodPressure",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "SkinThickness",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "Insulin",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "BMI",
+							"value": "33.6",
+							"type": "text"
+						},
+						{
+							"key": "DiabetesPedigreeFunction",
+							"value": "0.627",
+							"type": "text"
+						},
+						{
+							"key": "Age",
+							"value": "42\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.7:5003/diabetes/predict",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"7"
+					],
+					"port": "5003",
+					"path": [
+						"diabetes",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
